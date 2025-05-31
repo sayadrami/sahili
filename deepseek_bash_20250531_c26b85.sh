@@ -1,0 +1,48 @@
+cat > index.html <<EOL
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Android App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center;
+            padding: 40px;
+            background: #f0f5ff;
+        }
+        .download-btn {
+            background: #4a6cf7;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            background: #3050e0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 108, 247, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Download My Android App</h1>
+    <p>Latest version: 1.0.0 | Size: 22MB</p>
+    
+    <a href="app.apk" class="download-btn" download="my-app.apk">
+        Download APK
+    </a>
+    
+    <p>Requires Android 8.0 or higher</p>
+    <p><small>By downloading, you agree to our Terms of Service</small></p>
+</body>
+</html>
+EOL
